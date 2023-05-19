@@ -13,23 +13,27 @@ document.addEventListener('scroll', () => {
     }
 });
 
-// Handle Scrolling - Navbar menu
-const navbarMenu = document.querySelector('.navbar__topmenu');
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
 
+
+// Handle Scrolling when tapping on the navbar 
+const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
     const link = event.target.dataset.link;
     if (link == null) {
         return;
     }
-    scrollIntoView(link);
     navbarMenu.classList.remove('open');
-    
+    scrollIntoView(link);
 });
 
 // Navbar toggle button- show menu when small screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
-    navbarMenu.classList.add('open');
+    navbarMenu.classList.toggle('open');
 
 })
 
@@ -39,12 +43,9 @@ contactBtn.addEventListener('click', (event) => {
     scrollIntoView('#contact');
 });
 
-function scrollIntoView(someElement) {
-    const scrollTo = document.querySelector(someElement);
-    scrollTo.scrollIntoView({behavior: "smooth"});
-}
 
-// Make 'Home' transparent when scrolling down
+
+// Make home slowly fade to transparent as the window scrolls down
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 console.log(homeHeight);
@@ -53,16 +54,16 @@ document.addEventListener('scroll', () => {
 });
 
 //Show Topbtn when scrolling down
- const topbtn = document.querySelector('.topbtn');
- document.addEventListener('scroll', () => {
-    if (window.scrollY > homeHeight/2) {
-        topbtn.classList.add('visible');
-    } else {
-        topbtn.classList.remove('visible');
-    };
- });
+const topbtn = document.querySelector('.topbtn');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight/2) {
+      topbtn.classList.add('visible');
+  } else {
+      topbtn.classList.remove('visible');
+  };
+});
 
  // Topbtn click -> Scroll up to Home
- topbtn.addEventListener('click', () => {
-     scrollIntoView('#home');
- });
+topbtn.addEventListener('click', () => {
+  scrollIntoView('#home');
+});

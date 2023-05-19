@@ -10,13 +10,13 @@
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #adb9f9;
-  --color-light-blue: #ccd2f5;
+  --color-blue: #a3aff9;
+  --color-light-blue: #e7e9f7;
   --color-yellow: #edd5b3;
   --color-orange: #feb546;
   --color-black: #000000;
   --color-purple: #b0b1f4;
-  --color-dark-purple: #ae95e8;
+  --color-dark-purple: #aa8eeb;
 
 
   /* Font size */
@@ -108,11 +108,12 @@ button {
   padding: 16px;
   background-color: transparent;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar__dark {
   background-color: var(--color-blue);
-  padding: 8px;
+  padding: 16px;
 }
 
 .navbar__logo {
@@ -123,8 +124,9 @@ button {
 }
 
 .favicon {
-  width: 40px;
-  height: 30px;
+  margin-right: 10px;
+  width: 15%;
+  height: 15%;
 }
 
 .navbar__menu {
@@ -139,6 +141,7 @@ button {
   margin: 0 4px;
   color: var(--color-white);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
 
@@ -213,7 +216,8 @@ button {
 .about__stacks {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .stack__icon {
@@ -489,18 +493,15 @@ button {
     line-height: 40px;
   }
 
-  .navbar__topmenu {
+  .navbar__menu {
+    flex-direction: column;
     text-align: center;
-    margin: auto;
+    width: 100%;
     display: none;
   }
 
-  .navbar__topmenu.open {
+  .navbar__menu.open {
     display: block;
-  }
-
-  .navbar__menu {
-    flex-direction: column;
   }
 
   #about {
@@ -510,7 +511,7 @@ button {
 
   .about__stacks {
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 10px;
   }
 
   .stack {
