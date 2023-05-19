@@ -489,7 +489,6 @@ button {
     --font-regualr: 16px;
     --font-small: 14px;
     --font-micro: 12px;
-
     overflow-wrap: break-word;
   }
 
@@ -508,7 +507,7 @@ button {
   .navbar__toggle-btn {
     display: block;
     right: 16px;
-    top: 16px;
+    top: 25px;
   }
   #navbar {
     flex-direction: column;
@@ -563,11 +562,12 @@ button {
   }
 
   .topbtn {
+    right: 30px;
+    bottom: 50px;
     width: 50px;
     height: 50px;
-    font-size: 30px;
+    font-size: var(--font-medium);
     line-height: 50px;
-    right: 16px;
     align-items: center;
   }
 }
