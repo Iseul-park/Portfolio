@@ -11,7 +11,8 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #adb9f9;
-  --color-yellow: #fff7d1;
+  --color-light-blue: #ccd2f5;
+  --color-yellow: #edd5b3;
   --color-orange: #feb546;
   --color-black: #000000;
   --color-purple: #b0b1f4;
@@ -179,8 +180,9 @@ button {
 .section {
   padding: 50px;
   text-align: center;
-  margin: auto;
+
   max-width: 1200px;
+  margin: auto;
 }
 
 /* About me */
@@ -249,4 +251,62 @@ button {
   font-weight: var(--weight-semi-bold);
   color: var(--color-dark-grey);
   font-size: var(--font-micro);
+  color: var(--color-dark-grey);
+}
+
+/* Skills */
+#skills {
+  background-color: var(--color-light-blue);
+}
+
+.skillset {
+  display: flex;
+  margin: 20px 0;
+  background-color: var(--color-dark-purple);
+  color: var(--color-white);
+}
+
+.skillset__title {
+  color: var(--color-white);
+  text-shadow: 1px 1px 2px var(--color-dark-grey);
+}
+
+.skillset__left {
+  flex: 60%;
+  background-color: var(--color-purple);
+  padding: 20px 40px;
+  text-shadow: 1px 1px 2px var(--color-black);
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.skillset__right {
+  flex: 40%;
+}
+
+.tools {
+  background-color: var(--color-blue);
+  padding: 20px;
+}
+
+.etc {
+  padding: 20px;
 }
