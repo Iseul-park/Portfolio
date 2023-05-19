@@ -568,5 +568,6 @@ button {
     font-size: 30px;
     line-height: 50px;
     right: 16px;
+    align-items: center;
   }
 }
