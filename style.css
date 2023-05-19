@@ -41,6 +41,7 @@
 
 
 h1 {
+  font-family: 'Lilita One', cursive;
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-black);
@@ -129,6 +130,10 @@ button {
   height: 15%;
 }
 
+.text-logo {
+  font-family: 'Lilita One', cursive;
+}
+
 .navbar__menu {
   display: flex;
   color: var(--color-white);
@@ -175,6 +180,28 @@ button {
   height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
+  transition: .5s; /* Set the transition effect for images to 0.5 seconds */
+}
+
+/* Style for images on hover */
+.home__avatar:hover {
+  animation: colorHue 1s infinite alternate; 
+  transform: translateY(-10px);  /* Move the image upward by 10 pixels on the vertical axis */
+}
+
+/* Keyframes for the color hue animation */
+@keyframes colorHue {
+  from {
+    filter: hue-rotate(0deg); /* Set the starting color of the animation */
+  }
+  to {
+    filter: hue-rotate(100deg); /* Set the ending color of the animation */
+  }  
+}
+
+
+.home__title {
+  font-family: 'Lilita One', cursive;
 }
 
 .home__title,
@@ -406,7 +433,7 @@ button {
 /* Contact */
 
 #contact {
-  background-color: var(--color-light-blue);
+  background-color: var(--color-blue);
   max-width: 100%;
 }
 
