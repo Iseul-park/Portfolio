@@ -10,6 +10,7 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #a3aff9;
+  --color-dark-blue: #7280de;
   --color-light-blue: #e7e9f7;
   --color-yellow: #edd5b3;
   --color-orange: #feb546;
@@ -321,7 +322,7 @@ button {
 
 .skillset__left {
   flex: 60%;
-  background-color: var(--color-pink);
+  background-color: var(--color-dark-blue);
   padding: 20px 40px;
   text-shadow: 1px 1px 2px var(--color-black);
 }
