@@ -67,3 +67,12 @@ document.addEventListener('scroll', () => {
 topbtn.addEventListener('click', () => {
   scrollIntoView('#home');
 });
+
+// Type Animation for home title
+var typed = new Typed ('#element', {
+  strings: ["Iseul Park","Front-end developer"],
+  loop: true,
+  typeSpeed: 100,
+  backSpeed: 80,
+  backDelay: 1500
+});
