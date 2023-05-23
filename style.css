@@ -215,7 +215,7 @@ button {
   top: 60%;
   /* background: linear-gradient(45deg,  var(--color-blue), var(--color-dark-purple)); */
   background-image: url(images/planet2.png);
-  animation: animate__move 4s linear infinite;
+  animation: animate__move 5s linear infinite;
   -webkit-box-shadow: 12px -5px 15px 5px #80c8ffa7, -10px -7px 27px 1px #5c82ff, 5px 5px 5px 5px rgba(52,118,211,0); 
   box-shadow: 12px -5px 15px 5px #39739f48,  -10px -7px 27px 1px #5c5fff, 5px 5px 5px 5px rgba(52,118,211,0);
   z-index: 4;
@@ -258,7 +258,7 @@ button {
 
 .home__title {
   font-family: 'Lilita One', cursive;
-  font-size: 68px;
+  font-size: 58px;
 }
 
 .home__title,
@@ -270,11 +270,10 @@ button {
 
 .home__contact {
   position: relative;
-  left: 50px;
   color: var(--color-white);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
-  margin: 24px;
+  margin-top: 24px;
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
