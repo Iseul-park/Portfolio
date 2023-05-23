@@ -569,9 +569,14 @@ button {
     z-index: 7;
   }
 
+  .home__title {
+    font-family: 'Lilita One', cursive;
+    font-size: 48px;
+  }
   .home__container {
     position: relative;
     margin-top: 50px;
+    margin-bottom: 200px;
   }
 
   .home__element {
