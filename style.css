@@ -10,7 +10,7 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #0d234f;
-  --color-dark-blue: #7280de;
+  --color-sky-blue: #7280de;
   --color-light-blue: #e7e9f7;
   --color-yellow: #edd5b3;
   --color-orange: #feb546;
@@ -123,8 +123,12 @@ button {
 }
 
 .favicon {
-  width: 15%;
-  height: 15%;
+  position:relative;
+  top: 11px;
+  left: 20px;
+  width: 12%;
+  height: 12%;
+  margin-right: 27px;
 }
 
 .text-logo {
@@ -197,6 +201,7 @@ button {
   background-image: url(images/planet.png);
   animation: animateUser 4s linear infinite;
   -webkit-box-shadow: 12px -5px 15px 5px #39739f48,  -10px -7px 27px 1px #5c5fff, 5px 5px 5px 5px rgba(52,118,211,0); 
+  box-shadow: 12px -5px 15px 5px #39739f48,  -10px -7px 27px 1px #5c5fff, 5px 5px 5px 5px rgba(52,118,211,0);
   z-index: 4;
 }
 
@@ -211,8 +216,8 @@ button {
   /* background: linear-gradient(45deg,  var(--color-blue), var(--color-dark-purple)); */
   background-image: url(images/planet2.png);
   animation: animateUser 5s linear infinite;
-  -webkit-box-shadow: 12px -5px 15px 5px #80c8ffa7,  -10px -7px 27px 1px #5c82ff, 5px 5px 5px 5px rgba(52,118,211,0); 
-
+  -webkit-box-shadow: 12px -5px 15px 5px #80c8ffa7, -10px -7px 27px 1px #5c82ff, 5px 5px 5px 5px rgba(52,118,211,0); 
+  box-shadow: 12px -5px 15px 5px #39739f48,  -10px -7px 27px 1px #5c5fff, 5px 5px 5px 5px rgba(52,118,211,0);
   z-index: 4;
 }
 
@@ -226,7 +231,8 @@ button {
   border-radius: 50%;
   transition: .5s; /* Set the transition effect for images to 0.5 seconds */
   animation: animateUser 7s linear infinite;
-  -webkit-box-shadow: 12px -5px 15px 5px #80c8ff8d, -10px -7px 27px 1px #8E5CFF, 5px 5px 5px 5px rgba(52,118,211,0); 
+  -webkit-box-shadow: 12px -5px 15px 5px #80c8ff87, -10px -7px 27px 1px #9a75f1, 5px 5px 5px 5px rgba(56, 125, 222, 0.059);
+  box-shadow: 12px -5px 15px 5px #80c8ff87, -10px -7px 27px 1px #9a75f1, 5px 5px 5px 5px rgba(56, 125, 222, 0.059);
   z-index: 5;
 }
 
@@ -263,7 +269,7 @@ button {
 }
 
 .home__contact:hover {
-  background-color: var(--color-purple); 
+  background-color: var(--color-sky-blue); 
 }
 
 
@@ -296,14 +302,14 @@ button {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-dark-purple);
+  color: var(--color-blue);
   border: 2px solid var(--color-blue);
   border-radius: 50%;
   margin-bottom: 24px;
 }
 
 .stack__icon:hover i {
-  color: var(--color-dark-purple);
+  color: var(--color-sky-blue);
   transform: rotate(20deg) scale(1.1);
 }
 /* Animation duration */
@@ -367,7 +373,7 @@ button {
 
 .skillset__left {
   flex: 60%;
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-sky-blue);
   padding: 20px 40px;
   text-shadow: 1px 1px 2px var(--color-black);
 }
@@ -443,7 +449,7 @@ button {
   height: 100%;
   background-color: var(--color-black);
   opacity: 0;
-  color: var(--color-dark-blue);
+  color: var(--color-sky-blue);
   font-family: "Fredoka One", cursive;
   transition: all 280ms ease;
   transform: translateY(10px);
@@ -502,6 +508,10 @@ button {
   transform: scale(1.1);
 }
 
+.contact__rights {
+  color: white;
+  font-size: var(--font-small);
+}
 
 /* Top button */
 .topbtn {
@@ -584,7 +594,7 @@ button {
     content: "⭐";
   }
   .navbar__menu__item:hover {
-    background-color: var(--color-dark-purple); 
+    background-color: var(--color-sky-blue); 
     border: 1px solid var(--color-white);
   }
 
@@ -641,10 +651,6 @@ button {
     top: -20%;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    transition: .5s; /* Set the transition effect for images to 0.5 seconds */
-    animation: animateUser 7s linear infinite;
-    -webkit-box-shadow: 12px -5px 15px 5px #80c8ff8d,  -10px -7px 27px 1px #8E5CFF, 5px 5px 5px 5px rgba(52,118,211,0); 
     z-index: 5;
   }
 }
