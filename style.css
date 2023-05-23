@@ -199,7 +199,7 @@ button {
   top: 100%;
   /* background: linear-gradient(45deg,  var(--color-blue), var(--color-dark-purple)); */
   background-image: url(images/planet.png);
-  animation: animateUser 4s linear infinite;
+  animation: animate_scale 4s linear infinite;
   -webkit-box-shadow: 12px -5px 15px 5px #39739f48,  -10px -7px 27px 1px #5c5fff, 5px 5px 5px 5px rgba(52,118,211,0); 
   box-shadow: 12px -5px 15px 5px #39739f48,  -10px -7px 27px 1px #5c5fff, 5px 5px 5px 5px rgba(52,118,211,0);
   z-index: 4;
@@ -215,12 +215,11 @@ button {
   top: 60%;
   /* background: linear-gradient(45deg,  var(--color-blue), var(--color-dark-purple)); */
   background-image: url(images/planet2.png);
-  animation: animateUser 5s linear infinite;
+  animation: animate__move 4s linear infinite;
   -webkit-box-shadow: 12px -5px 15px 5px #80c8ffa7, -10px -7px 27px 1px #5c82ff, 5px 5px 5px 5px rgba(52,118,211,0); 
   box-shadow: 12px -5px 15px 5px #39739f48,  -10px -7px 27px 1px #5c5fff, 5px 5px 5px 5px rgba(52,118,211,0);
   z-index: 4;
 }
-
 
 .home__avatar {
   position: absolute;
@@ -230,18 +229,32 @@ button {
   height: 250px;
   border-radius: 50%;
   transition: .5s; /* Set the transition effect for images to 0.5 seconds */
-  animation: animateUser 7s linear infinite;
+  animation: animate_scale 7s linear infinite;
   -webkit-box-shadow: 12px -5px 15px 5px #80c8ff87, -10px -7px 27px 1px #9a75f1, 5px 5px 5px 5px rgba(56, 125, 222, 0.059);
   box-shadow: 12px -5px 15px 5px #80c8ff87, -10px -7px 27px 1px #9a75f1, 5px 5px 5px 5px rgba(56, 125, 222, 0.059);
   z-index: 5;
 }
 
-@keyframes animateUser {
+@keyframes animate_scale {
   50% {
     transform: scale(0.9);
   }
 }
 
+@keyframes animate__move {
+  0% {
+    top: 40%;
+    left: 85%;
+  }
+  50% {
+    top: 60%;
+    left: 80%;
+  }
+  100%{
+    top: 40%;
+    left: 85%;
+  }
+}
 
 .home__title {
   font-family: 'Lilita One', cursive;
