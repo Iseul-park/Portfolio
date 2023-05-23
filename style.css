@@ -176,12 +176,11 @@ button {
   /* border-radius: 0% 0% 10% 10%; */
 }
 
-
-
 .home__container {
   position: relative;
   margin-top: 150px;
   margin-bottom: 150px;
+  margin-left: 50px;
   width: 100%;
   z-index: 8;
 }
@@ -243,14 +242,11 @@ button {
   font-size: 68px;
 }
 
-.home__description {
-  position: relative;
-  z-index: 6;}
-
 .home__title,
 .home__description {
   color: var(--color-white);
-  
+  position: relative;
+  z-index: 6;
 }
 
 .home__contact {
@@ -546,13 +542,21 @@ button {
   }
 
   #home {
-    padding: 100px 15px 15px;
+    position: relative;
+    padding: 150px 100px 15px 15px;
+    z-index: 7;
   }
 
   .home__container {
+    position: relative;
     margin-top: 50px;
   }
 
+  .home__element {
+    position: relative;
+    top: 50px;
+    z-index: 8;
+  }
   .navbar__toggle-btn {
     display: block;
     right: 18px;
@@ -585,7 +589,9 @@ button {
   }
 
   .navbar__menu.open {
+    position: relative;
     display: block;
+    z-index: 8;
   }
 
   #about {
