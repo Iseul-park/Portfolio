@@ -576,7 +576,8 @@ button {
   .home__container {
     position: relative;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 180px;
+    margin-left: 20px;
   }
 
   .home__element {
@@ -587,7 +588,7 @@ button {
   .navbar__toggle-btn {
     display: block;
     right: 18px;
-    top: 32px;
+    top: 30px;
   }
   #navbar {
     position: fixed;

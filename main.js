@@ -70,8 +70,8 @@ topbtn.addEventListener('click', () => {
 
 // Type Animation for home title
 var typed = new Typed ('#element', {
-  strings: ["Iseul Park","Front-end developer"],
-  loop: true,
+  strings: ["Iseul Park","Front-end developer","Iseul Park","Front-end developer","Iseul Park"],
+  loop: false,
   typeSpeed: 100,
   backSpeed: 80,
   backDelay: 1500
