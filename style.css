@@ -462,7 +462,7 @@ button {
   background-color: var(--color-black);
   opacity: 0;
   color: var(--color-sky-blue);
-  font-family: "Fredoka One", cursive;
+  font-family: 'Open Sans', sans-serif;
   transition: all 280ms ease;
   transform: translateY(10px);
 }
@@ -476,7 +476,7 @@ button {
   font-style: italic;
   color: var(--color-pink);
   font-weight: var(--weight-semi-bold);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .project__description h3:after {
